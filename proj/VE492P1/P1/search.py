@@ -108,8 +108,9 @@ def breadthFirstSearch(problem):
         if state not in closed:
             closed.add(state)
             for successor in problem.getSuccessors(state):
-                new_path = path + [successor[1]]
-                fringe.push((successor[0], new_path))
+                if successor[0] not in closed:
+                    new_path = path + [successor[1]]
+                    fringe.push((successor[0], new_path))
 
 
 def uniformCostSearch(problem):
