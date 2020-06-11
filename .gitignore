@@ -3,3 +3,6 @@
 .DS_Store
 proj/.DS_Store
 .idea
+*.pyc
+*.tar
+*.zip
