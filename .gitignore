@@ -6,3 +6,4 @@ proj/.DS_Store
 *.pyc
 *.tar
 *.zip
+slides/*
